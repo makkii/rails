@@ -21,8 +21,9 @@ module ActionView
 
         index = 0
         fetch_or_cache_partial(cached_partials, order_by: keyed_collection.each_key) do
-          rendered_partials[index].tap { index += 1 }
+          rendered_partials[index].tap   { index += 1 }
         end
+        #jdsj
       end
 
       def collection_by_cache_keys
